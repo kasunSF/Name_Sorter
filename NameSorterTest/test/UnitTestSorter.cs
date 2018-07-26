@@ -1,14 +1,14 @@
 ﻿using System.IO;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NameSorter;
 using NameSorter.utils;
+using NUnit.Framework;
 
 namespace NameSorterTest.test
 {
-    [TestClass]
+    [TestFixture]
     public class UnitTestSorter
     {
-        [TestMethod]
+        [Test]
         public void TestSorter()
         {
             string inputFile = "InputFile.txt";

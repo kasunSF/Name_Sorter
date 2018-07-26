@@ -1,16 +1,16 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NameSorter;
 using NameSorter.utils;
+using NUnit.Framework;
 
 namespace NameSorterTest.test
 {
-    [TestClass]
+    [TestFixture]
     public class UnitTestFileHandler
     {
-        [TestMethod]
+        [Test]
         public void TestFileHandler_readFile_Non_Existing_File()
         {
             string fileName = "TestFile.txt";
@@ -19,7 +19,7 @@ namespace NameSorterTest.test
             Assert.AreEqual(null, fileHandler.readFile(fileName));
         }
 
-        [TestMethod]
+        [Test]
         public void TestFileHandler_readFile_Existing_File()
         {
             string fileName = "TestFile.txt";
@@ -35,7 +35,7 @@ namespace NameSorterTest.test
             Assert.AreEqual(content, result[0]);
         }
 
-        [TestMethod]
+        [Test]
         public void TestFileHandler_writeFile_Null_Content()
         {
             string fileName = "TestFile.txt";
@@ -46,7 +46,7 @@ namespace NameSorterTest.test
             Assert.AreEqual(false, result);
         }
 
-        [TestMethod]
+        [Test]
         public void TestFileHandler_writeFile_Not_Null_Content_Success()
         {
             string fileName = "TestFile.txt";
@@ -59,7 +59,7 @@ namespace NameSorterTest.test
             Assert.AreEqual(true, result);
         }
 
-        [TestMethod]
+        [Test]
         public void TestFileHandler_writeFile_Not_Null_Content_Fail()
         {
             string fileName = "TestFile1.txt";
@@ -78,7 +78,7 @@ namespace NameSorterTest.test
             Assert.AreEqual(false, result);
         }
 
-        [TestMethod]
+        [Test]
         public void TestFileHandler_renameFile_Non_Existing_File()
         {
             string fileName = "TestFile.txt";
@@ -88,7 +88,7 @@ namespace NameSorterTest.test
             Assert.AreEqual(NameSorterDefs.FileRenameStatus.Skipped, fileHandler.renameFile(fileName, newFileName));
         }
 
-        [TestMethod]
+        [Test]
         public void TestFileHandler_renameFile_Existing_File()
         {
             string fileName = "TestFile.txt";
@@ -103,7 +103,7 @@ namespace NameSorterTest.test
             Assert.AreEqual(NameSorterDefs.FileRenameStatus.Success, status);
         }
 
-        [TestMethod]
+        [Test]
         public void TestFileHandler_renameFile_Invalid_Output_File()
         {
             string fileName = "TestFile.txt";
@@ -118,7 +118,7 @@ namespace NameSorterTest.test
             Assert.AreEqual(NameSorterDefs.FileRenameStatus.Failed, status);
         }
 
-        [TestMethod]
+        [Test]
         public void TestFileHandler_renameFile_Invalid_Input_File()
         {
             string fileName = "Test@#$,.<>)(*&^%$#@!~!@%File.txt";

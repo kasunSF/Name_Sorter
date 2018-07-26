@@ -1,12 +1,12 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NameSorter.utils;
+﻿using NameSorter.utils;
+using NUnit.Framework;
 
 namespace NameSorterTest.test
 {
-    [TestClass]
+    [TestFixture]
     public class UnitTestNameFormatter
     {
-        [TestMethod]
+        [Test]
         public void TestNameFormatter_Format_Name_Invalid_Name()
         {
             string name = "Invalid_Name";
@@ -17,7 +17,7 @@ namespace NameSorterTest.test
             Assert.AreEqual(expectedName, result);
         }
 
-        [TestMethod]
+        [Test]
         public void TestNameFormatter_Format_Name_Valid_Name_1_Given()
         {
             string name = "First_Name Surname";
@@ -28,7 +28,7 @@ namespace NameSorterTest.test
             Assert.AreEqual(expectedName, result);
         }
 
-        [TestMethod]
+        [Test]
         public void TestNameFormatter_Format_Name_Valid_Name_2_Given()
         {
             string name = "First_Name Second_Name Surname";
@@ -39,7 +39,7 @@ namespace NameSorterTest.test
             Assert.AreEqual(expectedName, result);
         }
 
-        [TestMethod]
+        [Test]
         public void TestNameFormatter_Format_Name_Valid_Name_3_Given()
         {
             string name = "First_Name Second_Name Third_Name Surname";
@@ -50,7 +50,7 @@ namespace NameSorterTest.test
             Assert.AreEqual(expectedName, result);
         }
 
-        [TestMethod]
+        [Test]
         public void TestNameFormatter_Restore_Name_Invalid_Name()
         {
             string name = "Invalid_Name";
@@ -61,7 +61,7 @@ namespace NameSorterTest.test
             Assert.AreEqual(expectedName, result);
         }
 
-        [TestMethod]
+        [Test]
         public void TestNameFormatter_Restore_Name_Valid_Name_1_Given()
         {
             string name = "Surname First_Name";
@@ -72,7 +72,7 @@ namespace NameSorterTest.test
             Assert.AreEqual(expectedName, result);
         }
 
-        [TestMethod]
+        [Test]
         public void TestNameFormatter_Restore_Name_Valid_Name_2_Given()
         {
             string name = "Surname First_Name Second_Name";
@@ -83,7 +83,7 @@ namespace NameSorterTest.test
             Assert.AreEqual(expectedName, result);
         }
 
-        [TestMethod]
+        [Test]
         public void TestNameFormatter_Restore_Name_Valid_Name_3_Given()
         {
             string name = "Surname First_Name Second_Name Third_Name";
