@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameSorter", "NameSorter\NameSorter.csproj", "{B3935870-1859-4037-84F7-4A916E1BE4AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameSorterTest", "NameSorterTest\NameSorterTest.csproj", "{666B5E8C-1C67-4F36-BF12-F1C16AB5D085}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4F2E65A4-D8BA-4455-9CE4-AA0D56F381A1}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3935870-1859-4037-84F7-4A916E1BE4AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3935870-1859-4037-84F7-4A916E1BE4AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3935870-1859-4037-84F7-4A916E1BE4AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3935870-1859-4037-84F7-4A916E1BE4AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{666B5E8C-1C67-4F36-BF12-F1C16AB5D085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{666B5E8C-1C67-4F36-BF12-F1C16AB5D085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{666B5E8C-1C67-4F36-BF12-F1C16AB5D085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{666B5E8C-1C67-4F36-BF12-F1C16AB5D085}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
